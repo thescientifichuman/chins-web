@@ -30,7 +30,7 @@ a {
   border-radius: 20px;
 }
 #sidebar-content {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .sidebar {
   width: 250px;
@@ -41,27 +41,56 @@ a {
 .sidebar-item{
   margin-bottom: 10px;
   color: #191919;
-  
+
 }
 .sidebar-item:hover {
   color: #500;
-  
+}
+.sidebar-item > li {
+  display: none;
+
+}
+.sidebar-item:hover > li {
+  display: block;
+
 }
 .content {
   float: left;
   min-height: 400px;
   background-color: #fff;
-  width: 1100px;
+  width: 1000px;
+}
+.column{
+  width: 48%;
+  margin: 1%;
+  float: left;
 }
 .item {
   margin-left: 2.5%;
   margin-top: 20px;
-  width: 45%;
+  width: 100%;
   float: left;
 }
-.long {
-  height: 620px;
+.cont{
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  position: fixed;
+  overflow-y: scroll;
+  background: rgba(0,0,0,0.90);
 }
-.wide {
-  height: 300px;
+.cont > p {
+  color: #fff;
+  width: 80%;
+}
+.expanded{
+  max-width: 90%;
+}
+.button {
+  position: fixed;
+  background: rgba(0,0,0,0.9);
+  width: 60px;
+  height: 60px;
+  border: none;
+  right: 0px;
 }
