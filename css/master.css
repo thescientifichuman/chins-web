@@ -1,12 +1,11 @@
-@font-face {
-  font-family: font1;
-  src: url(font.woff2);
-}
+
 *{
-  font-family: font1;
+  font-family: GillSans Light;
 }
 body {
   margin:0;
+  font-family: 'GillSans Light';
+src: url('./GillSans-Light.woff2');
 }
 a {
   text-decoration: none;
