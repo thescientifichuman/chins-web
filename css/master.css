@@ -1,11 +1,15 @@
-
+@-ms-viewport{
+  width: device-width;
+}
 *{
-  font-family: GillSans Light;
+  font-family: GillSans Regular;
 }
 body {
   margin:0;
-  font-family: 'GillSans Light';
-src: url('./GillSans-Light.woff2');
+  font-family: 'GillSans Regular';
+src: url('./Gill-Sans.woff2');
+src: url('./Gill-Sans.otf?#iefix') format('embedded-opentype'),
+         url('./Gill-Sans.otf') format('otf')
 }
 body.digital-hide .digital{
   display: none;
@@ -67,7 +71,7 @@ a {
   width: calc(100% - 250px);
 }
 .column{
-  width: 250px ;
+  width: 450px ;
   margin:10px;
   float: left;
 }
@@ -96,11 +100,11 @@ a {
 }
 .button {
   position: fixed;
-  background: rgba(0,0,0,0.9);
+  background: #fff;
   width: 60px;
   height: 60px;
   border: none;
-  color:#fff;
+  color: rgba(0,0,0,0.9);
   right: 10px;
 }
 .footer{
@@ -111,7 +115,7 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   body {
     overflow-x: hidden;
   }
