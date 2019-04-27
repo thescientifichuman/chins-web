@@ -28,6 +28,16 @@
     function allillustrations() {
       document.getElementsByTagName("body")[0].className = " "
     }
+    var toggle=0;
+    function menu() {
+      if(toggle==0){
+        document.getElementById("sidebar-content").className = "show";
+        toggle = 1;
+      }else{
+        document.getElementById("sidebar-content").className = "hide";
+        toggle=0;
+      }
+    }
     </script>
     <div align="center" id="cont" class="cont">
 
@@ -37,9 +47,6 @@
   <div id="topbar-dummy"> </div>
   <div class="sidebar">
     <div align="center" id="sidebar-content">
-      <a href="">
-
-      </a>
       <a onclick="allillustrations()" href="#">
         <div class="sidebar-item">
       <p class="sidemenu">illustrations </p>
@@ -80,6 +87,7 @@
           about
         </div>
       </a>
+      <img src="images/menu-512.png" alt="Menu" class="burger" type="button" onclick="menu()">
       <div align="center" class="footer" style="left: 0; width:250px;
       bottom:10px;">
         <img src="images/insta.png" alt="instagram" height="25px" width="25px"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp

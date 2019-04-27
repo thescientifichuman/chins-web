@@ -121,14 +121,23 @@ a {
   }
   .sidebar {
     width: 100%;
+    min-height: 100px;
   }
   #dp{
+    top:60px;
     left: 50%;
     width: 200px;
     margin-left: -100px;
   }
   #sidebar-content {
-    margin-top: 100px;
+    margin-top: 150px;
+  }
+
+  #sidebar-content.show .sidebar-item {
+    display: block;
+  }
+  #sidebar-content.hide .sidebar-item {
+    display: none;
   }
   .footer{
     display: none;
@@ -137,6 +146,9 @@ a {
     width: calc(100% - 10px);
     margin-left: 5px;
     float: left;
+  }
+  .sidebar-item{
+    display: none;
   }
   .item {
     margin-left:0;
@@ -154,6 +166,9 @@ a {
     margin-top: 80px;
     max-width: 90%;
     max-height: 100%;
+  }
+  .burger{
+    width: 100px;
   }
   .m-footer{
     display: block;
