@@ -29,11 +29,26 @@
     <script type="text/javascript">
     function expand(id){
       var element = document.getElementById("cont");
+
+      document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        var isEscape = false;
+        if ("key" in evt) {
+            isEscape = (evt.key === "Escape" || evt.key === "Esc");
+        } else {
+            isEscape = (evt.keyCode === 27);
+        }
+        if (isEscape) {
+            srink();
+        }
+    };
+
       element.innerHTML='<button class="button"  onclick="srink()" name="button">X</button>\
       <img class="expanded"  src="'+id+'" alt="">\
       <p></p>';
       element.style.width="100%";
     }
+
     function srink(){
       var element = document.getElementById("cont");
       element.innerHTML="";
