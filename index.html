@@ -19,6 +19,15 @@
       element.innerHTML="";
       element.style.width=0;
     }
+    function digitalhide() {
+      document.getElementsByTagName("body")[0].className = " digital-hide"
+    }
+    function traditionalhide() {
+      document.getElementsByTagName("body")[0].className = " traditional-hide"
+    }
+    function allillustrations() {
+      document.getElementsByTagName("body")[0].className = " "
+    }
     </script>
     <div align="center" id="cont" class="cont">
 
@@ -31,17 +40,17 @@
       <a href="">
 
       </a>
-      <a href="">
+      <a onclick="allillustrations()" href="#">
         <div class="sidebar-item">
       <p class="sidemenu">illustrations </p>
         </div>
       </a>
-      <a href="">
+      <a onclick="digitalhide()" href="#">
         <div class="sidebar-item">
           traditional media
         </div>
       </a>
-      <a href="">
+      <a onclick="traditionalhide()" href="#">
         <div class="sidebar-item">
           digital media
         </div>
@@ -80,28 +89,28 @@
   </div>
   <div class="content">
     <div class="column">
-      <img id ="img1" onclick="expand('images/digital_media/faces-03.jpg')" src="images/digital_media/faces-03.jpg" alt="" class="item ">
-      <img id ="img2" onclick="expand('images/digital_media/Frances_Edited.jpg')" src="images/digital_media/Frances_Edited.jpg" alt="" class="item ">
-      <img id ="img3" onclick="expand('images/digital_media/galaxy-girl-latest.jpg')" src="images/digital_media/galaxy-girl-latest.jpg" alt="" class="item ">
-      <img id ="img4" onclick="expand('images/digital_media/okuurrrrrr-static-05.jpg')" src="images/digital_media/okuurrrrrr-static-05.jpg" alt="" class="item ">
+      <img id ="img1" onclick="expand('images/digital_media/faces-03.jpg')" src="images/digital_media/faces-03.jpg" alt="" class="item digital">
+      <img id ="img3" onclick="expand('images/traditional_media/Chop_Inktober2018.jpg')" src="images/traditional_media/Chop_Inktober2018.jpg" alt="" class="item traditional">
+      <img id ="img3" onclick="expand('images/digital_media/galaxy-girl-latest.jpg')" src="images/digital_media/galaxy-girl-latest.jpg" alt="" class="item digital">
+      <img id ="img4" onclick="expand('images/traditional_media/Exhausted_Inktober2018.jpg')" src="images/traditional_media/Exhausted_Inktober2018.jpg" alt="" class="item traditional">
+      <img id ="img4" onclick="expand('images/traditional_media/Poisonous_Inktober2018.jpg')" src="images/traditional_media/Poisonous_Inktober2018.jpg" alt="" class="item traditional">
     </div>
     <div class="column">
-      <img id ="img3" onclick="expand('images/traditional_media/Chop_Inktober2018.jpg')" src="images/traditional_media/Chop_Inktober2018.jpg" alt="" class="item ">
-      <img id ="img2" onclick="expand('images/traditional_media/Double_Inktober2018.jpg')" src="images/traditional_media/Double_Inktober2018.jpg" alt="" class="item ">
-      <img id ="img4" onclick="expand('images/traditional_media/Exhausted_Inktober2018.jpg')" src="images/traditional_media/Exhausted_Inktober2018.jpg" alt="" class="item ">
-      <img id ="img1" onclick="expand('images/traditional_media/flower-girl-low-res.jpg')" src="images/traditional_media/flower-girl-low-res.jpg" alt="" class="item ">
+      <img id ="img2" onclick="expand('images/traditional_media/Double_Inktober2018.jpg')" src="images/traditional_media/Double_Inktober2018.jpg" alt="" class="item traditional">
+      <img id ="img2" onclick="expand('images/digital_media/Frances_Edited.jpg')" src="images/digital_media/Frances_Edited.jpg" alt="" class="item digital">
+      <img id ="img1" onclick="expand('images/traditional_media/flower-girl-low-res.jpg')" src="images/traditional_media/flower-girl-low-res.jpg" alt="" class="item traditional">
+      <img id ="img4" onclick="expand('images/digital_media/okuurrrrrr-static-05.jpg')" src="images/digital_media/okuurrrrrr-static-05.jpg" alt="" class="item  digital">
     </div>
     <div class="column">
-    <img id ="img5" onclick="expand('images/digital_media/payphone.jpg')" src="images/digital_media/payphone.jpg" alt="" class="item ">
-    <img id ="img6" onclick="expand('images/digital_media/proud1-01.jpg')" src="images/digital_media/proud1-01.jpg" alt="" class="item ">
-      <img id ="img4" onclick="expand('images/traditional_media/Flowing_Inktober2018.jpg')" src="images/traditional_media/Flowing_Inktober2018.jpg" alt="" class="item ">
-      <img id ="img1" onclick="expand('images/traditional_media/IMG_4164-lowres.jpg')" src="images/traditional_media/IMG_4164-lowres.jpg" alt="" class="item ">
+    <img id ="img6" onclick="expand('images/digital_media/proud1-01.jpg')" src="images/digital_media/proud1-01.jpg" alt="" class="item digital">
+    <img id ="img1" onclick="expand('images/traditional_media/Roasted_Inktober2018.jpg')" src="images/traditional_media/Roasted_Inktober2018.jpg" alt="" class="item traditional">
+    <img id ="img1" onclick="expand('images/traditional_media/IMG_4164-lowres.jpg')" src="images/traditional_media/IMG_4164-lowres.jpg" alt="" class="item traditional">
+      <img id ="img4" onclick="expand('images/traditional_media/Flowing_Inktober2018.jpg')" src="images/traditional_media/Flowing_Inktober2018.jpg" alt="" class="item traditional">
     </div>
     <div class="column">
-    <img id ="img5" onclick="expand('images/traditional_media/mercy-A6.jpg')" src="images/traditional_media/mercy-A6.jpg" alt="" class="item ">
-    <img id ="img6" onclick="expand('images/traditional_media/Muddy_Inktober2018.jpg')" src="images/traditional_media/Muddy_Inktober2018.jpg" alt="" class="item ">
-    <img id ="img4" onclick="expand('images/traditional_media/Poisonous_Inktober2018.jpg')" src="images/traditional_media/Poisonous_Inktober2018.jpg" alt="" class="item ">
-    <img id ="img1" onclick="expand('images/traditional_media/Roasted_Inktober2018.jpg')" src="images/traditional_media/Roasted_Inktober2018.jpg" alt="" class="item ">
+    <img id ="img5" onclick="expand('images/traditional_media/mercy-A6.jpg')" src="images/traditional_media/mercy-A6.jpg" alt="" class="item traditional">
+    <img id ="img5" onclick="expand('images/digital_media/payphone.jpg')" src="images/digital_media/payphone.jpg" alt="" class="item digital">
+    <img id ="img6" onclick="expand('images/traditional_media/Muddy_Inktober2018.jpg')" src="images/traditional_media/Muddy_Inktober2018.jpg" alt="" class="item traditional">
     </div>
     <div align="center" class="m-footer">
       <img src="images/insta.png" alt="instagram" height="25px" width="25px"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
