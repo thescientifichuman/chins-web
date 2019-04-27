@@ -2,8 +2,28 @@
   <head>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Landing Page</title>
+    <title>Chinmayi Kaushik</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <script type="text/javascript">
@@ -11,7 +31,7 @@
       var element = document.getElementById("cont");
       element.innerHTML='<button class="button"  onclick="srink()" name="button">X</button>\
       <img class="expanded"  src="'+id+'" alt="">\
-      <p>Lorem ipsum</p>';
+      <p></p>';
       element.style.width="100%";
     }
     function srink(){
@@ -43,55 +63,34 @@
 
     </div>
   <img id="topbar" src="1.png" alt="">
-  <img id="dp" src="images/logo.svg" alt="">
+  <a href="index.html"><img id="dp" src="images/logo.svg" alt="" style="top: 100px;"></a>
   <div id="topbar-dummy"> </div>
   <div class="sidebar">
     <div align="center" id="sidebar-content">
-      <a onclick="allillustrations()" href="#">
-        <div class="sidebar-item">
-      <p class="sidemenu">illustrations </p>
+      <img src="images/menu-512.png" alt="Menu" class="burger" type="button" onclick="menu()">
+        <a onclick="allillustrations()" href="#">
+        <div class="sidebar-item" style="font-size: 22px;">
+      <p class="sidemenu">illustrations <img src="images/down.png" height="10px;" width="10px;"></p>
         </div>
       </a>
       <a onclick="digitalhide()" href="#">
-        <div class="sidebar-item">
+        <div class="sidebar-item" style="font-size: 15px;">
           traditional media
         </div>
       </a>
       <a onclick="traditionalhide()" href="#">
-        <div class="sidebar-item">
+        <div class="sidebar-item" style="font-size: 15px;">
           digital media
         </div>
       </a>
       <a href="">
-        <div class="sidebar-item">
-          logo design
-        </div>
-      </a>
-      <a href="">
-        <div class="sidebar-item">
-          shop
-        </div>
-      </a>
-      <a href="">
-        <div class="sidebar-item">
-          blog
-        </div>
-      </a>
-      <a href="">
-        <div class="sidebar-item">
+        <div class="sidebar-item" style="font-size: 22px;">
           contact
         </div>
       </a>
-      <a href="">
-        <div class="sidebar-item">
-          about
-        </div>
-      </a>
-      <img src="images/menu-512.png" alt="Menu" class="burger" type="button" onclick="menu()">
-      <div align="center" class="footer" style="left: 0; width:250px;
-      bottom:10px;">
-        <img src="images/insta.png" alt="instagram" height="25px" width="25px"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <img src="images/mail.png" alt="gmail" height="25px" width="25px">
+      <div align="center" class="footer" style="left: 0; width:250px; top: 80px;">
+      <a href="https://www.instagram.com/chinmayikaushik/"><img src="images/insta.svg" alt="instagram" height="25px" width="25px" style="opacity: 0.6;"></a> &nbsp&nbsp
+      <a href="https://www.linkedin.com/in/chinmayikaushik/"><img src="images/linkedin.svg" alt="linkedIn" height="25px" width="25px" style="opacity: 0.6;"></a>
       </div>
     </div>
   </div>
@@ -102,11 +101,17 @@
       <img id ="img3" onclick="expand('images/digital_media/galaxy-girl-latest.jpg')" src="images/digital_media/galaxy-girl-latest.jpg" alt="" class="item digital">
       <img id ="img4" onclick="expand('images/traditional_media/Exhausted_Inktober2018.jpg')" src="images/traditional_media/Exhausted_Inktober2018.jpg" alt="" class="item traditional">
       <img id ="img4" onclick="expand('images/traditional_media/Poisonous_Inktober2018.jpg')" src="images/traditional_media/Poisonous_Inktober2018.jpg" alt="" class="item traditional">
+      <img id ="img4" onclick="expand('images/traditional_media/Scorched_Inktober2018.jpg')" src="images/traditional_media/Scorched_Inktober2018.jpg" alt="" class="item traditional">
+      <img id ="img4" onclick="expand('images/traditional_media/Stretch_Inktober2018.jpg')" src="images/traditional_media/Stretch_Inktober2018.jpg" alt="" class="item traditional">
+      <img id ="img7" onclick="expand('images/traditional_media/Muddy_Inktober2018.jpg')" src="images/traditional_media/Muddy_Inktober2018.jpg" alt="" class="item traditional">
     </div>
     <div class="column">
       <img id ="img2" onclick="expand('images/traditional_media/Double_Inktober2018.jpg')" src="images/traditional_media/Double_Inktober2018.jpg" alt="" class="item traditional">
       <img id ="img2" onclick="expand('images/digital_media/Frances_Edited.jpg')" src="images/digital_media/Frances_Edited.jpg" alt="" class="item digital">
       <img id ="img1" onclick="expand('images/traditional_media/flower-girl-low-res.jpg')" src="images/traditional_media/flower-girl-low-res.jpg" alt="" class="item traditional">
+      <img id ="img1" onclick="expand('images/traditional_media/Tranquil_Inktober2018.jpg')" src="images/traditional_media/Tranquil_Inktober2018.jpg" alt="" class="item traditional">
+      <img id ="img1" onclick="expand('images/traditional_media/tree-of-life-low-res.jpg')" src="images/traditional_media/tree-of-life-low-res.jpg" alt="" class="item traditional">
+      <img id ="img1" onclick="expand('images/traditional_media/Weak_Inktober2018.jpg')" src="images/traditional_media/Weak_Inktober2018.jpg" alt="" class="item traditional">
       <img id ="img4" onclick="expand('images/digital_media/okuurrrrrr-static-05.jpg')" src="images/digital_media/okuurrrrrr-static-05.jpg" alt="" class="item  digital">
     </div>
     <div class="column">
@@ -116,12 +121,11 @@
     <img id ="img4" onclick="expand('images/traditional_media/Flowing_Inktober2018.jpg')" src="images/traditional_media/Flowing_Inktober2018.jpg" alt="" class="item traditional">
     <img id ="img5" onclick="expand('images/traditional_media/mercy-A6.jpg')" src="images/traditional_media/mercy-A6.jpg" alt="" class="item traditional">
     <img id ="img6" onclick="expand('images/digital_media/payphone.jpg')" src="images/digital_media/payphone.jpg" alt="" class="item digital">
-    <img id ="img7" onclick="expand('images/traditional_media/Muddy_Inktober2018.jpg')" src="images/traditional_media/Muddy_Inktober2018.jpg" alt="" class="item traditional">
     </div>
     <div align="center" class="m-footer">
-      <img src="images/insta.png" alt="instagram" height="25px" width="25px"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <img src="images/mail.png" alt="gmail" height="25px" width="25px">
-    </div>
+      <a href="https://www.instagram.com/chinmayikaushik/"><img src="images/insta.svg" alt="instagram" height="25px" width="25px" style="opacity: 0.6;"></a> &nbsp&nbsp
+      <a href="https://www.linkedin.com/in/chinmayikaushik/"><img src="images/linkedin.svg" alt="linkedIn" height="25px" width="25px" style="opacity: 0.6;"></a>
+        </div>
   </div>
   </body>
 </html>
