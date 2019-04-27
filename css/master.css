@@ -57,10 +57,10 @@ a {
   float: left;
   min-height: 400px;
   background-color: #fff;
-  width: 1000px;
+  width: 1500px;
 }
 .column{
-  width: 48%;
+  width: 23%;
   margin: 1%;
   float: left;
 }
@@ -69,6 +69,7 @@ a {
   margin-top: 20px;
   width: 100%;
   float: left;
+  height: auto;
 }
 .cont{
   width: 0;
