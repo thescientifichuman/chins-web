@@ -57,7 +57,10 @@ a {
   float: left;
   min-height: 400px;
   background-color: #fff;
-  width: 1500px;
+  width: 1400px;
+  /*responsive bro if exact layout needed
+  max-width: 100%;
+	height: auto; */
 }
 .column{
   width: 23%;
