@@ -70,10 +70,18 @@ $headers = 'From: '.$email."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
-
+Thank you for contacting us. We will be in touch with you very soon.
+<script type="text/javascript">
+function showIt() {
+document.getElementById("redirect").style.visibility = "visible";
+}
+setTimeout("showIt()", 100); // after 2 sec
+</script>
 <?php
 echo '<script language="javascript">';
 echo 'alert("Message successfully sent")';
 echo '</script>';
+echo "<meta http-equiv=\"refresh\" content=\"2;url=index.html\"/>";
+
 }
 ?>
