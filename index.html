@@ -39,17 +39,16 @@
             isEscape = (evt.keyCode === 27);
         }
         if (isEscape) {
-            srink();
+            shrink();
         }
     };
 
-      element.innerHTML='<button class="button"  onclick="srink()" name="button">X</button>\
-      <img class="expanded"  src="'+id+'" alt="">\
+      element.innerHTML='<div onclick="shrink()"> </div><img class="expanded"  src="'+id+'" alt="">\
       <p></p>';
       element.style.width="100%";
     }
 
-    function srink(){
+    function shrink(){
       var element = document.getElementById("cont");
       element.innerHTML="";
       element.style.width=0;

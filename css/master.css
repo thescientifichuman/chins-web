@@ -108,7 +108,18 @@ a {
   color: #fff;
   width: 80%;
 }
+
+.cont > div {
+  position: fixed;
+  top: 0;
+  z-index:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.0);
+}
 .expanded{
+  z-index: 2;
   max-width: 90%;
   max-height: 100%;
 }
